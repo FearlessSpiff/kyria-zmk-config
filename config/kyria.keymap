@@ -14,8 +14,6 @@
 
 #define DEL_W &kp C(BSPC)
 
-WTF this should not work here
-
 / {
     behaviors {
         tdcpy: tap_dance_copy {
