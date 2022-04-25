@@ -19,6 +19,7 @@
         tdcpy: tap_dance_copy {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_COPY";
+            #binding-cells = <0>;
             tapping-term-ms = <220>;
             bindings = <&kp C>, <&kp LC(C)>;
         };
