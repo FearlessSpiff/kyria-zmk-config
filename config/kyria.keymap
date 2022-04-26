@@ -49,7 +49,7 @@
 //                     | GUI  | DEL  | RET  |  SPACE  |   SPACE |  | DEL_WORD|  SPACE  | RALT | RCTL  | RSHFT |
 			bindings = <
 	&kp TAB   &kp Q &kp W &kp E    &kp R    &kp T                                                &kp Y    &kp U    &kp I     &kp O   &kp P    &kp BSPC
-	&kp TAB   &kp A &kp S &kp D    &kp F    &kp G                                                &kp H    &kp J    &kp K     &kp L   DE_PLUS  &kp RET
+	&mo NAV   &kp A &kp S &kp D    &kp F    &kp G                                                &kp H    &kp J    &kp K     &kp L   DE_PLUS  &kp RET
 	&kp LSHFT &kp Z &kp X &tdcpy   &kp V    &kp B    &kp LSHFT &kp CAPS      &kp LSHFT DE_PIPE   &kp N    &kp M    &kp COMMA &kp DOT DE_MINS  &kp RSHFT
 	                      &kp LGUI &kp LCTL &kp LALT &kp SPACE &kp SPACE     DEL_W     &kp SPACE &kp RALT &kp RCTL &kp RSHFT
 			>;
@@ -67,7 +67,7 @@
 			bindings = <
 	________ ________ ________ ________ ________ ________                                        DE_UE    &kp UP   DE_OE     TODO     ________ &kp DEL
 	________ DE_AE    TODO     ________ ________ ________                                        &kp LEFT &kp DOWN &kp RIGHT DE_HASH  ________ ________
-	________ ________ ________ ________ ________ ________ ________ ________    ________ ________ ________ ________ ________  ________ ________ ________
+	________ ________ ________ ________ ________ ________ ________ ________    ________ ________ &kp HOME &kp END  ________  ________ ________ ________
 	                           ________ ________ ________ ________ ________    ________ ________ ________ ________ ________
 			>;
 
