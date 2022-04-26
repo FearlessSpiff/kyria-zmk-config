@@ -9,7 +9,10 @@
 
 #define DE_PLUS &kp RBRC
 #define DE_LABK &kp NON_US_BACKSLASH // <
+#define DE_PIPE &kp RA(NON_US_BACKSLASH)
 #define DE_MINS &kp SLASH
+
+#define DEL_W &kp LC(BSPC)
 
 / {
     behaviors {
@@ -34,8 +37,8 @@
 			bindings = <
 	&kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
 	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   DE_PLUS  &kp RET
-	&kp LSHFT &kp Z &kp X &tdcpy &kp V &kp B &kp LSHFT &kp CAPS        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT DE_MINS  &kp RSHFT
-	                &kp LGUI &kp LCTL &kp LALT &kp SPACE &kp SPACE     &kp BSPC  &kp SPACE &kp RALT &kp RCTL &kp RSHFT
+	&kp LSHFT &kp Z &kp X &tdcpy &kp V &kp B &kp LSHFT &kp CAPS         &kp LSHFT DE_PIPE   &kp N &kp M  &kp COMMA &kp DOT DE_MINS  &kp RSHFT
+	                &kp LGUI &kp LCTL &kp LALT &kp SPACE &kp SPACE     DEL_W     &kp SPACE &kp RALT &kp RCTL &kp RSHFT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
