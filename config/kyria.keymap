@@ -25,10 +25,10 @@
 #define DE_HASH &kp NON_US_HASH
 
 // Special shortcuts
-#define ________ &trans
-#define TODO     &trans
-#define DEL_W    &kp LC(BSPC)
-#define SPACE_NUM  &lt LOWER SPACE
+#define ________   &trans
+#define TODO       &trans
+#define DEL_W      &kp LC(BSPC)
+#define SPACE_NUM  &lt NUM SPACE
 
 / {
     behaviors {
