@@ -29,6 +29,10 @@
 #define TODO       &trans
 #define DEL_W      &kp LC(BSPC)
 #define SPACE_NUM  &lt NUM SPACE
+#define BT_1       &bt BT_SEL 0
+#define BT_2       &bt BT_SEL 1
+#define BT_3       &bt BT_SEL 1
+#define BT_CLEAR   &bt BT_CLR
 
 / {
     behaviors {
@@ -69,7 +73,7 @@
 			bindings = <
 	________ ________ ________ ________ ________ ________                                        ________ DE_UE    &kp UP   DE_OE     DE_QUES  &kp DEL
 	________ DE_AE    DE_SS    ________ ________ ________                                        ________ &kp LEFT &kp DOWN &kp RIGHT DE_HASH  ________
-	________ ________ ________ ________ ________ ________ ________ ________    ________ ________ &kp HOME &kp END  ________  ________ ________ ________
+	________ ________ ________ ________ ________ ________ BT_1     BT_2        BT_3     BT_CLEAR &kp HOME &kp END  ________  ________ ________ ________
 	                           ________ ________ ________ ________ ________    ________ ________ ________ ________ ________
 			>;
 
