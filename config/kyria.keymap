@@ -22,7 +22,7 @@
 #define DE_AE   &kp APOS
 #define DE_SS   &kp MINUS
 #define DE_QUES &kp LS(MINUS)
-#define DE_HASH &kp NON_US_HASH
+#define DE_HASH &kp NON_US_BACKSLASH
 
 // Special shortcuts
 #define ________   &trans
@@ -67,8 +67,8 @@
 // | ---  | --- | --- | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- | --- | --- | --- |
 //                    | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- |
 			bindings = <
-	________ ________ ________ ________ ________ ________                                        DE_UE    &kp UP   DE_OE     DE_QUES  ________ &kp DEL
-	________ DE_AE    DE_SS    ________ ________ ________                                        &kp LEFT &kp DOWN &kp RIGHT DE_HASH  ________ ________
+	________ ________ ________ ________ ________ ________                                        ________ DE_UE    &kp UP   DE_OE     DE_QUES  &kp DEL
+	________ DE_AE    DE_SS    ________ ________ ________                                        ________ &kp LEFT &kp DOWN &kp RIGHT DE_HASH  ________
 	________ ________ ________ ________ ________ ________ ________ ________    ________ ________ &kp HOME &kp END  ________  ________ ________ ________
 	                           ________ ________ ________ ________ ________    ________ ________ ________ ________ ________
 			>;
