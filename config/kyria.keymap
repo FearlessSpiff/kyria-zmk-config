@@ -15,8 +15,10 @@
 #define NUM     2
 
 // DE keys
-#define DE_PLUS &kp RBRC
+#define DE_PLUS &kp RBKT
+#define DE_TILD &kp RA(RBKT)
 #define DE_LABK &kp NON_US_BACKSLASH // <
+#define DE_RABK &kp LS(NON_US_BACKSLASH) // >
 #define DE_PIPE &kp RA(NON_US_BACKSLASH)
 #define DE_MINS &kp SLASH
 #define DE_UE   &kp LBRC
@@ -26,6 +28,10 @@
 #define DE_QUES &kp LS(MINUS)
 #define DE_HASH &kp NON_US_HASH
 #define DE_QUOT &kp LS(NON_US_HASH)
+#define DE_DQUO &kp LS(N2)
+#define DE_EQUL &kp LS(N0)
+#define DE_BSLS &kp RA(MINUS)
+#define DE_SLSH &kp LS(N7)
 
 // Special shortcuts
 #define ________   &trans
@@ -83,8 +89,8 @@
 			bindings = <
 	________ ________ ________ ________ ________ ________                                        ________ DE_UE    &kp UP   DE_OE     DE_QUES  &kp DEL
 	________ DE_AE    DE_SS    ________ ________ ________                                        ________ &kp LEFT &kp DOWN &kp RIGHT DE_HASH  ________
-	________ ________ ________ ________ ________ ________ BT_1     BT_2        BT_3     BT_CLEAR &kp HOME &kp END  DE_QUOT  ________  ________ ________
-	                           ________ ________ ________ ________ ________    ________ ________ ________ ________ ________
+	________ ________ ________ ________ ________ ________ BT_1     BT_2        BT_3     BT_CLEAR &kp HOME &kp END  DE_QUOT  DE_DQUO   DE_EQUL   DE_TILD
+	                           ________ ________ ________ DE_LABK DE_RABK    ________ ________ DE_BSLS  DE_SLSH  ________
 			>;
 
 			sensor-bindings = <&inc_dec_cp ________ ________>;
