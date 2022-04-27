@@ -34,12 +34,10 @@
 #define DE_SLSH &kp LS(N7)
 #define DE_LCBR &kp RA(N7)
 #define DE_RCBR &kp LS(N0)
-#define DE_LPRN &kp S(N8)
-#define DE_RPRN &kp S(N9)
+#define DE_LPRN &kp LS(N8)
+#define DE_RPRN &kp LS(N9)
 #define DE_LBRC &kp RA(N8)
 #define DE_RBRC &kp RA(N9)
-
-
 
 // Special shortcuts
 #define ________   &trans
