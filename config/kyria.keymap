@@ -32,6 +32,14 @@
 #define DE_EQUL &kp LS(N0)
 #define DE_BSLS &kp RA(MINUS)
 #define DE_SLSH &kp LS(N7)
+#define DE_LCBR &kp RA(N7)
+#define DE_RCBR &kp LS(N0)
+#define DE_LPRN &kp S(N8)
+#define DE_RPRN &kp S(N9)
+#define DE_LBRC &kp RA(N8)
+#define DE_RBRC &kp RA(N9)
+
+
 
 // Special shortcuts
 #define ________   &trans
@@ -87,9 +95,9 @@
 // | ---  | --- | --- | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- | --- | --- | --- |
 //                    | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- |
 			bindings = <
-	________ ________ ________ ________ ________ ________                                        ________ DE_UE    &kp UP   DE_OE     DE_QUES  &kp DEL
-	________ DE_AE    DE_SS    ________ ________ ________                                        ________ &kp LEFT &kp DOWN &kp RIGHT DE_HASH  ________
-	________ ________ ________ ________ ________ ________ BT_1     BT_2        BT_3     BT_CLEAR &kp HOME &kp END  DE_QUOT  DE_DQUO   DE_EQUL   DE_TILD
+	________ ________ ________ ________ DE_LCBR  DE_RCBR                                         ________ DE_UE    &kp UP   DE_OE     DE_QUES  &kp DEL
+	________ DE_AE    DE_SS    ________ DE_LPRN  DE_RPRN                                         ________ &kp LEFT &kp DOWN &kp RIGHT DE_HASH  ________
+	________ ________ ________ ________ DE_LBRC  DE_RBRC  BT_1     BT_2        BT_3     BT_CLEAR &kp HOME &kp END  DE_QUOT  DE_DQUO   DE_EQUL   DE_TILD
 	                           ________ ________ ________ DE_LABK DE_RABK    ________ ________ DE_BSLS  DE_SLSH  ________
 			>;
 
