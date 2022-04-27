@@ -24,7 +24,8 @@
 #define DE_AE   &kp APOS
 #define DE_SS   &kp MINUS
 #define DE_QUES &kp LS(MINUS)
-#define DE_HASH &kp NON_US_BACKSLASH
+#define DE_HASH &kp NON_US_HASH
+#define DE_QUOT &kp LS(NON_US_HASH)
 
 // Special shortcuts
 #define ________   &trans
@@ -41,7 +42,7 @@
 #define UG_NEXT    &rgb_ug RGB_EFF
 #define UG_BRGHT   &rgb_ug RGB_BRI
 #define UG_DARK    &rgb_ug RGB_BRD
-#define UG_PINK    &rgb_ug RGB_COLOR_HSB(305,24,100)
+#define UG_LILA    &rgb_ug RGB_COLOR_HSB(274,47,56)
 
 / {
     behaviors {
@@ -82,7 +83,7 @@
 			bindings = <
 	________ ________ ________ ________ ________ ________                                        ________ DE_UE    &kp UP   DE_OE     DE_QUES  &kp DEL
 	________ DE_AE    DE_SS    ________ ________ ________                                        ________ &kp LEFT &kp DOWN &kp RIGHT DE_HASH  ________
-	________ ________ ________ ________ ________ ________ BT_1     BT_2        BT_3     BT_CLEAR &kp HOME &kp END  ________  ________ ________ ________
+	________ ________ ________ ________ ________ ________ BT_1     BT_2        BT_3     BT_CLEAR &kp HOME &kp END  DE_QUOT  ________  ________ ________
 	                           ________ ________ ________ ________ ________    ________ ________ ________ ________ ________
 			>;
 
@@ -99,7 +100,7 @@
 			bindings = <
 	&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6                                          &kp F7   &kp F8   &kp F9   &kp F10  &kp F11  ________
 	&kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &kp N6                                          &kp N7   &kp N8   &kp N9   &kp N0   ________ ________
-	________ ________ ________ ________ ________ ________ UG_DARK  UG_BRGHT    UG_NEXT  UG_TOG   UG_PINK  ________ ________ ________ ________ ________
+	________ ________ ________ ________ ________ ________ UG_DARK  UG_BRGHT    UG_NEXT  UG_TOG   UG_LILA  ________ ________ ________ ________ ________
 	                           ________ ________ ________ ________ ________    ________ ________ ________ ________ ________
 			>;
 
