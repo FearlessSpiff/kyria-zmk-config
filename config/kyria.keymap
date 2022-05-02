@@ -57,8 +57,12 @@
 #define UG_LILA    &rgb_ug RGB_COLOR_HSB(282, 100, 83)
 
 // home row mod
-//#define SHFT_A     &mt LSHIFT A
-//#define CTRL_S     &mt L A
+#define ALT_S &mt LALT S
+#define CTL_D &mt LCTRL D
+#define SFT_F &mt LSHIFT F
+#define SFT_J &mt RSHIFT J
+#define CTL_K &mt RCTRL K
+#define ALT_L &mt RALT L
 
 / {
     behaviors {
@@ -82,7 +86,7 @@
 //                     | GUI  | DEL  | RET  |  SPACE  |   SPACE |  | DEL_WORD|  SPACE  | RALT | RCTL  | RSHFT |
 			bindings = <
 	&kp TAB   &kp Q &kp W &kp E    &kp R    &kp T                                                &kp Y    &kp U    &kp I     &kp O   &kp P    &kp BSPC
-	&mo NAV   &kp A &kp S &kp D    &kp F    &kp G                                                &kp H    &kp J    &kp K     &kp L   DE_PLUS  &kp RET
+	&mo NAV   &kp A ALT_S CTL_D    SFT_F    &kp G                                                &kp H    SFT_J    CTL_K     ALT_L   DE_PLUS  &kp RET
 	&kp LSHFT &kp Z &kp X &tdcpy   &kp V    &kp B    &kp LSHFT &kp CAPS      &kp LSHFT DE_PIPE   &kp N    &kp M    &kp COMMA &kp DOT DE_MINS  &kp RSHFT
 	                      &kp LGUI &kp LCTL &kp LALT SPACE_NUM &kp SPACE     DEL_W     SPACE_NUM &kp RALT &kp RCTL &kp RSHFT
 			>;
