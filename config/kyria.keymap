@@ -57,22 +57,24 @@
 #define UG_LILA    &rgb_ug RGB_COLOR_HSB(282, 100, 83)
 
 // home row mod
-#define ALT_S &mt LALT S
-#define CTL_D &mt LCTRL D
-#define SFT_F &mt LSHIFT F
-#define SFT_J &mt RSHIFT J
-#define CTL_K &mt RCTRL K
-#define ALT_L &mt RALT L
+#define ALT_S &hm LALT S
+#define CTL_D &hm LCTRL D
+#define SFT_F &hm LSHIFT F
+#define SFT_J &hm RSHIFT J
+#define CTL_K &hm RCTRL K
+#define ALT_L &hm RALT L
 
 / {
     behaviors {
-        tdcpy: tap_dance_copy {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_COPY";
-            #binding-cells = <0>;
-            tapping-term-ms = <220>;
-            bindings = <&kp C>, <&kp LC(C)>;
-        };
+        hm: homerow_mods {
+                    compatible = "zmk,behavior-hold-tap";
+                    label = "HOMEROW_MODS";
+                    #binding-cells = <2>;
+                    tapping-term-ms = <180>;
+                    quick-tap-ms = <0>;
+                    flavor = "tap-preferred";
+                    bindings = <&kp>, <&kp>;
+                };
     };
 
 	keymap {
