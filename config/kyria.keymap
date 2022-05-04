@@ -93,7 +93,7 @@
 	                      &kp LGUI &kp LCTL &kp LALT SPACE_NUM &kp SPACE     DEL_W     SPACE_NUM &kp RALT &kp RCTL &kp RSHFT
 			>;
 
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 
 		nav_layer {
