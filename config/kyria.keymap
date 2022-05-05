@@ -110,9 +110,9 @@
                     tapping-term-ms = <200>;
                     bindings = <&kp TAB>, <&go_to_source>;
                 };
-        o_run: tap_dance_go_to_source {
+        o_run: tap_dance_run {
                     compatible = "zmk,behavior-tap-dance";
-                    label = "TAP_DANCE_GO_TO_SOURCE";
+                    label = "TAP_DANCE_RUN";
                     #binding-cells = <0>;
                     tapping-term-ms = <200>;
                     bindings = <&kp O>, <&run>;
