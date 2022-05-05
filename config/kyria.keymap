@@ -78,6 +78,18 @@
                     , <&macro_tap     &kp RET>
                     ;
             )
+
+            ZMK_MACRO(run,
+                wait-ms = <30>;
+                tap-ms = <40>;
+                bindings
+                    = <&macro_press   &kp LALT>
+                    , <&macro_press   &kp LSHFT>
+                    , <&macro_tap     &kp F10>
+                    , <&macro_release &kp LSHFT>
+                    , <&macro_release &kp LALT>
+                    ;
+            )
     };
 
     behaviors {
@@ -98,6 +110,13 @@
                     tapping-term-ms = <200>;
                     bindings = <&kp TAB>, <&go_to_source>;
                 };
+        o_run: tap_dance_go_to_source {
+                    compatible = "zmk,behavior-tap-dance";
+                    label = "TAP_DANCE_GO_TO_SOURCE";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <200>;
+                    bindings = <&kp O>, <&run>;
+                };
     };
 
 	keymap {
@@ -110,7 +129,7 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT |   CAPS  |  | L SHIFT |    |    |  N   |  M    |  ,    |  .   |   -   | RSHFT|
 //                     | GUI  | DEL  | RET  |  SPACE  |   SPACE |  | DEL_WORD|  SPACE  | RALT | RCTL  | RSHFT |
 			bindings = <
-	&tab_gts  &kp Q &kp W &kp E    &kp R    &kp T                                                &kp Y    &kp U    &kp I     &kp O   &kp P    &kp BSPC
+	&tab_gts  &kp Q &kp W &kp E    &kp R    &kp T                                                &kp Y    &kp U    &kp I     &o_run  &kp P    &kp BSPC
 	&mo NAV   &kp A ALT_S CTL_D    SFT_F    &kp G                                                &kp H    SFT_J    CTL_K     ALT_L   DE_PLUS  &kp RET
 	&kp LSHFT &kp Z &kp X &kp C    &kp V    &kp B    &kp LSHFT &kp CAPS      &kp LSHFT DE_PIPE   &kp N    &kp M    &kp COMMA &kp DOT DE_MINS  &kp RSHFT
 	                      &kp LGUI &kp LCTL &kp LALT SPACE_NUM &kp SPACE     DEL_W     SPACE_NUM &kp RALT &kp RCTL &go_to_source
