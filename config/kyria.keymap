@@ -67,7 +67,7 @@
 / {
 
     macros {
-            ZMK_MACRO(go_to_source,
+            ZMK_MACRO(go_src,
                 wait-ms = <30>;
                 tap-ms = <40>;
                 bindings
@@ -102,21 +102,6 @@
                     flavor = "tap-preferred";
                     bindings = <&kp>, <&kp>;
                 };
-
-        tab_gts: tap_dance_go_to_source {
-                    compatible = "zmk,behavior-tap-dance";
-                    label = "TAP_DANCE_GO_TO_SOURCE";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <200>;
-                    bindings = <&kp TAB>, <&go_to_source>;
-                };
-        o_run: tap_dance_run {
-                    compatible = "zmk,behavior-tap-dance";
-                    label = "TAP_DANCE_RUN";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <200>;
-                    bindings = <&kp O>, <&run>;
-                };
     };
 
 	keymap {
@@ -129,7 +114,7 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT |   CAPS  |  | L SHIFT |    |    |  N   |  M    |  ,    |  .   |   -   | RSHFT|
 //                     | GUI  | DEL  | RET  |  SPACE  |   SPACE |  | DEL_WORD|  SPACE  | RALT | RCTL  | RSHFT |
 			bindings = <
-	&tab_gts  &kp Q &kp W &kp E    &kp R    &kp T                                                &kp Y    &kp U    &kp I     &o_run  &kp P    &kp BSPC
+	&kp TAB  &kp Q &kp W &kp E    &kp R    &kp T                                                &kp Y    &kp U    &kp I     &kp O  &kp P    &kp BSPC
 	&mo NAV   &kp A ALT_S CTL_D    SFT_F    &kp G                                                &kp H    SFT_J    CTL_K     ALT_L   DE_PLUS  &kp RET
 	&kp LSHFT &kp Z &kp X &kp C    &kp V    &kp B    &kp LSHFT &kp CAPS      &kp LSHFT DE_PIPE   &kp N    &kp M    &kp COMMA &kp DOT DE_MINS  &kp RSHFT
 	                      &kp LGUI &kp LCTL &kp LALT SPACE_NUM &kp SPACE     DEL_W     SPACE_NUM &kp RALT &kp RCTL &go_to_source
@@ -145,7 +130,7 @@
 // | ---  | --- | --- | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- | --- | --- | --- |
 //                    | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- |
 			bindings = <
-	&kp ESC  ________ ________ ________ DE_LCBR  DE_RCBR                                         ________ DE_UE    &kp UP   DE_OE     DE_QUES  &kp DEL
+	&kp ESC  &go_src  &run     ________ DE_LCBR  DE_RCBR                                         ________ DE_UE    &kp UP   DE_OE     DE_QUES  &kp DEL
 	________ DE_AE    DE_SS    ________ DE_LPRN  DE_RPRN                                         ________ &kp LEFT &kp DOWN &kp RIGHT DE_HASH  ________
 	________ ________ ________ ________ DE_LBRC  DE_RBRC  BT_1     BT_2        BT_3     BT_CLEAR &kp HOME &kp END  DE_QUOT  DE_DQUO   DE_EQUL   DE_TILD
 	                           ________ ________ ________ DE_LABK DE_RABK    ________ ________ DE_BSLS  DE_SLSH  &kp C_MUTE
