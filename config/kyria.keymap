@@ -129,7 +129,7 @@
 			bindings = <
 	&kp TAB   &kp Q &kp W &kp E    &kp R    &kp T                                                &kp Y    &kp U    &kp I     &kp O   &kp P    &kp BSPC
 	&mo NAV   &kp A ALT_S CTL_D    SFT_F    &kp G                                                &kp H    SFT_J    CTL_K     ALT_L   DE_PLUS  &kp RET
-	&kp LSHFT &kp Z &kp X &kp C    &kp V    &kp B    &lt NUMPAD &kp CAPS      &kp LSHFT DE_PIPE   &kp N    &kp M    &kp COMMA &kp DOT DE_MINS  &kp RSHFT
+	&kp LSHFT &kp Z &kp X &kp C    &kp V    &kp B    &mo NUMPAD &kp CAPS      &kp LSHFT DE_PIPE   &kp N    &kp M    &kp COMMA &kp DOT DE_MINS  &kp RSHFT
 	                      &kp LGUI &kp LALT &kp LCTL SPACE_NUM  &kp SPACE     DEL_W     SPACE_NUM &kp RCTL &kp RALT &cad
 			>;
 
@@ -169,7 +169,7 @@
 			sensor-bindings = <&inc_dec_kp ________ ________ &inc_dec_kp C_PREV C_NEXT>;
 		};
 
-    numpad_layer {
+        numpad_layer {
 // --------------------------------------------------------------------------------------------------------
 // | ---  | --- | --- | --- | --- | --- |                             | --- | --- | --- | --- | --- | --- |
 // | ---  | --- | --- | --- | --- | --- |                             | --- | --- | --- | --- | --- | --- |
