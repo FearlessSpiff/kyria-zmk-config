@@ -11,9 +11,10 @@
 
 // Layers
 #define DEFAULT 0
-#define NAV     1
-#define NUM     2
-#define NUMPAD  3
+#define MINE    1
+#define NAV     2
+#define NUM     3
+#define NUMPAD  4
 
 // DE keys
 #define DE_PLUS &kp RBKT
@@ -127,14 +128,30 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT |   CAPS  |  | L SHIFT |    |    |  N   |  M    |  ,    |  .   |   -   | RSHFT|
 //                     | GUI  | DEL  | RET  |  SPACE  |   SPACE |  | DEL_WORD|  SPACE  | RALT | RCTL  | RSHFT |
 			bindings = <
-	&kp TAB   &kp Q &kp W &kp E    &kp R    &kp T                                                &kp Y    &kp U    &kp I     &kp O   &kp P    &kp BSPC
-	&mo NAV   &kp A ALT_S CTL_D    SFT_F    &kp G                                                &kp H    SFT_J    CTL_K     ALT_L   DE_PLUS  &kp RET
-	&kp LSHFT &kp Z &kp X &kp C    &kp V    &kp B    &mo NUMPAD &kp CAPS      &kp LSHFT DE_PIPE   &kp N    &kp M    &kp COMMA &kp DOT DE_MINS  &kp RSHFT
-	                      &kp LGUI &kp LALT &kp LCTL SPACE_NUM  &kp SPACE     DEL_W     SPACE_NUM &kp RCTL &kp RALT &cad
+	&kp TAB   &kp Q &kp W &kp E    &kp R    &kp T                                                 &kp Y    &kp U    &kp I     &kp O   &kp P    &kp BSPC
+	&mo NAV   &kp A ALT_S CTL_D    SFT_F    &kp G                                                 &kp H    SFT_J    CTL_K     ALT_L   DE_PLUS  &kp RET
+	&kp LSHFT &kp Z &kp X &kp C    &kp V    &kp B    &mo NUMPAD &kp CAPS      &tog MINE DE_PIPE   &kp N    &kp M    &kp COMMA &kp DOT DE_MINS  &kp RSHFT
+	                      &kp LGUI &kp LALT &kp LCTL SPACE_NUM  &kp SPACE     &kp BSPC  SPACE_NUM &kp RCTL &kp RALT &cad
 			>;
 
 			sensor-bindings = <&inc_dec_kp ________ ________ &inc_dec_kp PG_UP PG_DN>;
 		};
+
+		mine_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |  BS  |
+// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   | RET  |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT |   CAPS  |  | L SHIFT |    |    |  N   |  M    |  ,    |  .   |   -   | RSHFT|
+//                     | GUI  | DEL  | RET  |  SPACE  |   SPACE |  | DEL_WORD|  SPACE  | RALT | RCTL  | RSHFT |
+            bindings = <
+    &kp TAB   &kp J &kp L &kp U    &kp A    &kp Q                                                &kp W    &kp B    &kp D     &kp G   &kp Y    &kp Z
+    &mo NAV   &kp C &kp R &kp I    &kp E    &kp O                                                &kp M    &kp N    &kp T     &kp S   &kp H    &kp RET
+    &kp LSHFT &kp V &kp X DE_UE    DE_AE    DE_OE    &mo NUMPAD &kp CAPS      &tog MINE DE_PIPE  &kp P    &kp F    &kp COMMA &kp DOT &kp K    &kp RSHFT
+                          &kp LGUI &kp LALT &kp LCTL SPACE_NUM  &kp SPACE     &kp BSPC  SPACE_NUM &kp RCTL &kp RALT &kp K_APP
+            >;
+
+            sensor-bindings = <&inc_dec_kp ________ ________ &inc_dec_kp PG_UP PG_DN>;
+        };
 
 		nav_layer {
 // --------------------------------------------------------------------------------------------------------
