@@ -66,6 +66,8 @@
 #define CTL_K &hm RCTRL K
 #define ALT_L &hm RALT L
 
+#define CTRL_DEL &hm RCTRL BSPC
+
 / {
 
     macros {
@@ -131,7 +133,7 @@
 	&kp TAB   &kp Q &kp W &kp E    &kp R    &kp T                                                 &kp Y    &kp U    &kp I     &kp O   &kp P    &kp BSPC
 	&mo NAV   &kp A ALT_S CTL_D    SFT_F    &kp G                                                 &kp H    SFT_J    CTL_K     ALT_L   DE_PLUS  &kp RET
 	&kp LSHFT &kp Z &kp X &kp C    &kp V    &kp B    &mo NUMPAD &kp CAPS      &tog MINE DE_PIPE   &kp N    &kp M    &kp COMMA &kp DOT DE_MINS  &kp RSHFT
-	                      &kp LGUI &kp LALT &kp LCTL SPACE_NUM  &kp SPACE     &kp BSPC  SPACE_NUM &kp RCTL &kp RALT &cad
+	                      &kp LGUI &kp LALT &kp LCTL SPACE_NUM  &kp SPACE     &kp BSPC  SPACE_NUM CTRL_DEL &kp RALT &cad
 			>;
 
 			sensor-bindings = <&inc_dec_kp ________ ________ &inc_dec_kp PG_UP PG_DN>;
