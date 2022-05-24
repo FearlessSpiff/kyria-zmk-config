@@ -134,7 +134,7 @@
 			bindings = <
 	&kp TAB   &kp Q &kp W &kp E    &kp R    &kp T                                                 &kp Y    &kp U    &kp I     &kp O   &kp P    &kp BSPC
 	&mo NAV   &kp A ALT_S CTL_D    SFT_F    &kp G                                                 &kp H    SFT_J    CTL_K     ALT_L   DE_PLUS  &kp RET
-	&kp LSHFT &kp Z &kp X &kp C    &kp V    &kp B    &mo NUMPAD &kp CAPS      &tog MINE DE_PIPE   &kp N    &kp M    &kp COMMA &kp DOT DE_MINS  &kp RSHFT
+	&kp LSHFT &kp Z &kp X &kp C    &kp V    &kp B    &mo NUMPAD &kp CAPS      ________  DE_PIPE   &kp N    &kp M    &kp COMMA &kp DOT DE_MINS  &kp RSHFT
 	                      &kp LGUI &kp LALT &kp LCTL SPACE_NUM  &kp SPACE     &kp BSPC  SPACE_NUM CTRL_DEL &kp RALT &cad
 			>;
 
@@ -150,7 +150,7 @@
             bindings = <
     &kp TAB   &kp J &kp L &kp U    &kp A    &kp Q                                                &kp W    &kp B    &kp D     &kp G   &kp Y    &kp Z
     &mo NAV   &kp C &kp R &kp I    &kp E    &kp O                                                &kp M    &kp N    &kp T     &kp S   &kp H    &kp RET
-    &kp LSHFT &kp V &kp X DE_UE    DE_AE    DE_OE    &mo NUMPAD &kp CAPS      &tog MINE DE_PIPE  &kp P    &kp F    &kp COMMA &kp DOT &kp K    &kp RSHFT
+    &kp LSHFT &kp V &kp X DE_UE    DE_AE    DE_OE    &mo NUMPAD &kp CAPS      ________  DE_PIPE  &kp P    &kp F    &kp COMMA &kp DOT &kp K    &kp RSHFT
                           &kp LGUI &kp LALT &kp LCTL SPACE_NUM  &kp SPACE     &kp BSPC  SPACE_NUM &kp RCTL &kp RALT &kp K_APP
             >;
 
@@ -167,7 +167,7 @@
 	&kp ESC  &go_src  &run     ________ DE_LCBR  DE_RCBR                                         ________ DE_UE    &kp UP   DE_OE     DE_QUES  &kp DEL
 	________ DE_AE    DE_SS    ________ DE_LPRN  DE_RPRN                                         ________ &kp LEFT &kp DOWN &kp RIGHT DE_HASH  ________
 	________ ________ ________ ________ DE_LBRC  DE_RBRC  BT_1     BT_2        BT_3     BT_CLEAR &kp HOME &kp END  DE_QUOT  DE_DQUO   DE_EQUL   DE_TILD
-	                           ________ ________ ________ DE_LABK DE_RABK    ________ ________ DE_BSLS  DE_SLSH  &kp C_MUTE
+	                           ________ ________ ________ DE_LABK DE_RABK      &kp DEL  ________ DE_BSLS  DE_SLSH  &kp C_MUTE
 			>;
 
 			sensor-bindings = <&inc_dec_kp ________ ________ &inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -197,10 +197,10 @@
 // | ---  | --- | --- | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- | --- | --- | --- |
 //                    | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- |
             bindings = <
-    ________ ________ ________ ________ ________ ________                                        &kp KP_DIVIDE   &kp N7   &kp N8   &kp N9   &kp KP_MINUS &kp BSPC
-    ________ ________ ________ ________ ________ ________                                        &kp KP_MULTIPLY &kp N4   &kp N5   &kp N6   &kp KP_PLUS  ________
-    ________ ________ ________ ________ ________ ________ ________ ________    ________ ________ ________        &kp N1   &kp N2   &kp N3   &kp DOT      &kp KP_EQUAL
-                               ________ ________ ________ ________ ________    ________ ________ &kp N0          ________ ________
+    ________ ________ ________ ________ ________ ________                                         &kp KP_DIVIDE   &kp N7   &kp N8   &kp N9   &kp KP_MINUS &kp BSPC
+    ________ ________ ________ ________ ________ ________                                         &kp KP_MULTIPLY &kp N4   &kp N5   &kp N6   &kp KP_PLUS  ________
+    ________ ________ ________ ________ ________ ________ ________ ________    &tog MINE ________ ________        &kp N1   &kp N2   &kp N3   &kp DOT      &kp KP_EQUAL
+                               ________ ________ ________ ________ ________    ________  ________  &kp N0          ________ ________
             >;
 
             sensor-bindings = <&inc_dec_kp ________ ________ &inc_dec_kp C_PREV C_NEXT>;
