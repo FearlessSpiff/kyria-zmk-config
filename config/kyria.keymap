@@ -60,13 +60,17 @@
 
 // home row mod
 #define ALT_S &hm LALT S
+#define ALT_3 &hm LALT N3
 #define CTL_D &hm LCTRL D
+#define CTL_4 &hm LCTRL N4
 #define SFT_F &hm LSHIFT F
-#define SFT_5 &hm LSHIFT 5
-#define SFT_8 &hm RSHIFT 8
+#define SFT_5 &hm LSHIFT N5
+#define SFT_8 &hm RSHIFT N8
 #define SFT_J &hm RSHIFT J
 #define CTL_K &hm RCTRL K
+#define CTL_9 &hm RCTRL N9
 #define ALT_L &hm RALT L
+#define ALT_0 &hm RALT N0
 
 #define CTRL_DEL &hm RCTRL BSPC
 
@@ -182,7 +186,7 @@
 //                    | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- |
 			bindings = <
 	&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6                                          &kp F7   &kp F8   &kp F9   &kp F10  &kp F11  &kp BSPC
-	&kp N1   &kp N2   &kp N3   &kp N4   SFT_5    &kp N6                                          &kp N7   SFT_8    &kp N9   &kp N0   ________ ________
+	&kp N1   &kp N2   ALT_3    CTL_4    SFT_5    &kp N6                                          &kp N7   SFT_8    CTL_9    ALT_0    ________ ________
 	________ ________ ________ ________ ________ ________ UG_DARK  UG_BRGHT    UG_NEXT  UG_TOG   UG_LILA  ________ &kp COMMA &kp DOT ________ ________
 	                           ________ ________ ________ ________ ________    ________ ________ ________ ________ &kp C_PLAY
 			>;
