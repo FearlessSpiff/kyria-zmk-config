@@ -58,18 +58,26 @@
 #define UG_DARK    &rgb_ug RGB_BRD
 #define UG_LILA    &rgb_ug RGB_COLOR_HSB(282, 100, 83)
 
-// home row mod
+// home row mod left
 #define ALT_S &hm LALT S
+#define ALT_R &hm LALT R
 #define ALT_3 &hm LALT N3
 #define CTL_D &hm LCTRL D
+#define CTL_I &hm LCTRL I
 #define CTL_4 &hm LCTRL N4
 #define SFT_F &hm LSHIFT F
+#define SFT_E &hm LSHIFT E
 #define SFT_5 &hm LSHIFT N5
+
+// home row mod right
 #define SFT_8 &hm RSHIFT N8
 #define SFT_J &hm RSHIFT J
+#define SFT_N &hm RSHIFT N
 #define CTL_K &hm RCTRL K
+#define CTL_T &hm RCTRL T
 #define CTL_9 &hm RCTRL N9
 #define ALT_L &hm RALT L
+#define RALT_S &hm RALT S
 #define ALT_0 &hm RALT N0
 
 #define CTRL_DEL &hm RCTRL BSPC
@@ -152,8 +160,8 @@
 // | ---  | --- | --- | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- | --- | --- | --- |
 //                    | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- |
             bindings = <
-    &kp TAB   &kp J &kp L &kp U    &kp A    &kp Q                                                &kp W    &kp B    &kp D     &kp G   &kp Y    &kp Z
-    &mo NAV   &kp C &kp R &kp I    &kp E    &kp O                                                &kp M    &kp N    &kp T     &kp S   &kp H    &kp RET
+    &kp TAB   &kp J &kp L &kp U    &kp A    &kp Q                                                &kp W    &kp B    &kp D     &kp G   &kp Z    &kp Y
+    &mo NAV   &kp C ALT_R CTL_I    SFT_E    &kp O                                                &kp M    SFT_N    CTL_T     RALT_S  &kp H    &kp RET
     &kp LSHFT &kp V &kp X DE_UE    DE_AE    DE_OE    &mo NUMPAD &kp CAPS      ________  DE_PIPE  &kp P    &kp F    &kp COMMA &kp DOT &kp K    &kp RSHFT
                           &kp LGUI &kp LALT &kp LCTL SPACE_NUM  &kp SPACE     &kp BSPC  SPACE_NUM &kp RCTL &kp RALT &kp K_APP
             >;
