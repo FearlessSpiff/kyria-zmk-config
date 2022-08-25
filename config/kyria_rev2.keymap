@@ -183,8 +183,8 @@
 			bindings = <
 	&kp ESC  &go_src  &run     ________ DE_LCBR  DE_RCBR                                         ________ DE_MINS  &kp UP   DE_SS     DE_QUES  &kp DEL
 	________ DE_AE    DE_SS    ________ DE_LPRN  DE_RPRN                                         ________ &kp LEFT &kp DOWN &kp RIGHT DE_HASH  ________
-	________ ________ ________ ________ DE_LBRC  DE_RBRC  BT_1     BT_2        BT_3     BT_CLEAR &kp HOME &kp END  DE_QUOT  DE_DQUO   DE_EQUL   DE_TILD
-	                           ________ ________ ________ DE_LABK DE_RABK      &kp DEL  ________ DE_BSLS  DE_SLSH  &kp C_MUTE
+	________ ________ ________ ________ DE_LBRC  DE_RBRC  ________ ________    ________   ________ &kp HOME &kp END  DE_QUOT  DE_DQUO   DE_EQUL   DE_TILD
+	                           ________ ________ ________ DE_LABK  DE_RABK     &kp DEL    ________ DE_BSLS  DE_SLSH  &kp C_MUTE
 			>;
 
 			sensor-bindings = <&inc_dec_kp ________ ________ &inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -214,10 +214,10 @@
 // | ---  | --- | --- | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- | --- | --- | --- |
 //                    | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- |
             bindings = <
-    ________ ________ ________ ________ ________ ________                                         &kp KP_DIVIDE   &kp N7   &kp N8   &kp N9   &kp KP_MINUS &kp BSPC
-    ________ ________ ________ ________ ________ ________                                         &kp KP_MULTIPLY &kp N4   &kp N5   &kp N6   &kp KP_PLUS  ________
-    ________ ________ ________ ________ ________ ________ ________ ________    &tog QWER ________ ________        &kp N1   &kp N2   &kp N3   &kp DOT      &kp KP_EQUAL
-                               ________ ________ ________ ________ ________    ________  ________  &kp N0          ________ ________
+    ________ ________ ________ ________ ________ ________                                          &kp KP_DIVIDE   &kp N7   &kp N8   &kp N9   &kp KP_MINUS &kp BSPC
+    ________ ________ ________ ________ ________ ________                                          &kp KP_MULTIPLY &kp N4   &kp N5   &kp N6   &kp KP_PLUS  ________
+    ________ ________ ________ ________ ________ ________ ________  BT_CLEAR    BT_1      BT_2     ________        &kp N1   &kp N2   &kp N3   &kp DOT      &kp KP_EQUAL
+                               ________ ________ ________ &tog QWER BT_5        BT_3      BT_4     &kp N0          ________ ________
             >;
 
             sensor-bindings = <&inc_dec_kp ________ ________ &inc_dec_kp C_PREV C_NEXT>;
