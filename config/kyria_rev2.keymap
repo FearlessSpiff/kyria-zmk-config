@@ -132,10 +132,10 @@
 // | ---  | --- | --- | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- | --- | --- | --- |
 //                    | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- |
             bindings = <
-    &kp TAB  &kp J  &kp L  &kp U        &kp A        &kp Q                                                            &kp W    &kp B     &kp D        &kp G    &kp DE_Y  &kp DE_Z
-    &mo NAV  C_SYM  ALT_R  CTL_I        SFT_E        &kp O                                                            &kp M    SFT_N     CTL_T        RALT_S   H_SYM     &kp RET
-    SFT_SS   &kp V  &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA  &mo NUMPAD  &kp CAPS         ________  &kp DE_PIPE  &kp P    &kp F     &kp COMMA    &kp DOT  &kp K     SFT_MIN
-                           &kp LGUI     &kp LALT     &kp LCTL     SPACE_SYM   &kp SPACE        &kp BSPC  SPACE_NUM    DEL_W    &kp RALT  &kp DE_PLUS
+    &kp TAB  &kp J  &kp L  &kp U        &kp A        &kp Q                                                            &kp W      &kp B     &kp D        &kp G    &kp DE_Y  &kp DE_Z
+    &mo NAV  C_SYM  ALT_R  CTL_I        SFT_E        &kp O                                                            &kp M      SFT_N     CTL_T        RALT_S   H_SYM     &kp RET
+    SFT_SS   &kp V  &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA  &mo NUMPAD  &kp CAPS         ________  &kp DE_PIPE  &kp P      &kp F     &kp COMMA    &kp DOT  &kp K     SFT_MIN
+                           &kp LGUI     &kp LALT     &kp LSHFT    &kp LSHFT   &kp SPACE        &kp BSPC  SPACE_NUM    &kp LSHFT  &kp RALT  &kp DE_PLUS
              >;
 
                     sensor-bindings = <&inc_dec_kp ________ ________ &inc_dec_kp PG_UP PG_DN>;
