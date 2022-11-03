@@ -135,7 +135,7 @@
             bindings = <
     &kp TAB  &kp J  &kp L  &kp U        &kp A        &kp Q                                                            &kp W      &kp B     &kp D        &kp G    &kp DE_Y  &kp DE_Z
     &mo NAV  C_SYM  ALT_R  CTL_I        SFT_E        &kp O                                                            &kp M      SFT_N     CTL_T        RALT_S   H_SYM     &kp RET
-    SFT_SS   &kp V  &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA  &mo NUMPAD  &kp CAPS         ________  &kp DE_PIPE  &kp P      &kp F     &kp COMMA    &kp DOT  &kp K     SFT_MIN
+    SFT_SS   &kp V  &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA  &mo NUMPAD  &kp CAPS         ________  &kp DE_PIPE  &kp P      &kp F     &kp COMMA    &kp DOT  &kp K     &kp RSHFT
                            &run         &go_src      &kp SPACE    &kp LSHFT   &kp LGUI         &kp BSPC  SPACE_NUM    DEL_W      ________  ________
              >;
 
