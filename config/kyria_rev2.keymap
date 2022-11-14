@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
 #include "keymap_german.h"
@@ -34,12 +33,6 @@
 #define BT_4       &bt BT_SEL 3
 #define BT_5       &bt BT_SEL 4
 #define BT_CLEAR   &bt BT_CLR
-
-#define UG_TOG     &rgb_ug RGB_TOG
-#define UG_NEXT    &rgb_ug RGB_EFF
-#define UG_BRGHT   &rgb_ug RGB_BRI
-#define UG_DARK    &rgb_ug RGB_BRD
-#define UG_LILA    &rgb_ug RGB_COLOR_HSB(282, 100, 83)
 
 // home row mod left
 #define ALT_S &hm LALT S
@@ -194,7 +187,7 @@
 			bindings = <
 	&kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6                                                &kp F7     &kp F8    &kp F9      &kp F10  &kp F11   &kp BSPC
 	&kp N1    &kp N2    ALT_3     CTL_4     SFT_5     &kp N6                                                &kp N7     SFT_8     CTL_9       ALT_0    ________  ________
-	________  ________  ________  ________  ________  ________  UG_DARK  UG_BRGHT        UG_NEXT   UG_TOG   UG_LILA    ________  &kp COMMA   &kp DOT  ________  ________
+	________  ________  ________  ________  ________  ________  ________  ________       ________  ________  ________  ________  &kp COMMA   &kp DOT  ________  ________
 	                              ________  ________  ________  ________  ________       ________  ________  ________  ________  &kp C_PLAY
 			>;
 
@@ -210,10 +203,10 @@
 // | ---  | --- | --- | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- | --- | --- | --- |
 //                    | --- | --- | --- | --- | --- |     | --- | --- | --- | --- | --- |
             bindings = <
-    EXT_OFF          EXT_ON           ________         ________         ________  ________                                        &kp KP_DIVIDE    &kp N7    &kp N8    &kp N9   &kp KP_MINUS  &kp BSPC
-    ________         ________         ________         ________         ________  ________                                        &kp KP_MULTIPLY  &kp N4    &kp N5    &kp N6   &kp KP_PLUS   ________
-    &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  ________  ________  ________  BT_CLEAR        BT_1  BT_2  ________         &kp N1    &kp N2    &kp N3   &kp DOT       &kp KP_EQUAL
-                                                       ________         ________  ________  ________  BT_5            BT_3  BT_4  &kp N0           ________  ________
+    EXT_OFF   EXT_ON    ________  ________  ________  ________                                        &kp KP_DIVIDE    &kp N7    &kp N8    &kp N9   &kp KP_MINUS  &kp BSPC
+    ________  ________  ________  ________  ________  ________                                        &kp KP_MULTIPLY  &kp N4    &kp N5    &kp N6   &kp KP_PLUS   ________
+    ________  ________  ________  ________  ________  ________  ________  BT_CLEAR        BT_1  BT_2  ________         &kp N1    &kp N2    &kp N3   &kp DOT       &kp KP_EQUAL
+                                  ________  ________  ________  ________  BT_5            BT_3  BT_4  &kp N0           ________  ________
             >;
 
             sensor-bindings = <&inc_dec_kp ________ ________ &inc_dec_kp C_PREV C_NEXT>;
